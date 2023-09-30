@@ -19,6 +19,11 @@ header ul, #title .title-wrapper {
     padding-right: 15%;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+}
+
 header ul {
     display: flex;
     flex-direction: row;
@@ -92,6 +97,11 @@ header ul li:first-child {
     font-size: 36px;
     font-family: 'Roboto', extra-bold;
     color: var(--title-back-color);
+}
+
+.info-header {
+    position: sticky;
+    top: 50px;
 }
 
 .info-wrapper p {
