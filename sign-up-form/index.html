@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div>
+        <div class="img-container">
+            <img src="img/background.jpg">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="img/logo.png">
+                    <h1>Odin</h1>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Photo by <a target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a target="_blank" href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="form-container-wrapper">
+            <div class="header form-container">
+                <p>
+                    Welcome to the <b>Odin Project!</b> We can help you find meaning in life and realize your deepest dreams. Sign up <span class="italic">now</span> to get started. 
+                </p>
+                <br>
+                <p>
+                    You <span class="italic">know</span> you want to.
+                </p>
+            </div>
+            <form id="form">
+                <div class="form-wrapper">
+                    <div class="form form-container">
+                        <p>Let's do this!</p>
+                        <div class="form-fields">
+                            <fieldset>
+                                <span class="label-field">
+                                    <label for="first-name">First name</label>
+                                    <input type="text" id="first-name" required>
+                                </span>
+                                <span class="label-field">
+                                    <label for="last-name">Last name</label>
+                                    <input type="text" id="last-name" required>
+                                </span>
+                            </fieldset>
+                            <fieldset>
+                                <span class="label-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" required>
+                                </span>
+                                <span class="label-field">
+                                    <label for="phone">Phone number</label>
+                                    <input type="phone" id="phone" required>
+                                </span>
+                            </fieldset>
+                            <fieldset>
+                                <span class="label-field">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" required>
+                                    <label for="password" id="error-passwords" class="error-message"></label>
+                                </span>
+                                <span class="label-field">
+                                    <label for="confirm-password">Confirm password</label>
+                                    <input type="password" id="confirm-password" required>
+                                </span>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons form-container">
+                    <button class="button" id="submit-button" href="#" type="submit" onclick="validate()">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
