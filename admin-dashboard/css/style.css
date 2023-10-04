@@ -5,7 +5,6 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
     position: relative;
 }
 
@@ -23,6 +22,94 @@ li {
     grid-column: 2/3;
     display: grid;
     position: sticky;
+    gap: 20px;
+}
+
+.nav, .menu {
+    padding: 0 5vw;
+}
+
+.nav {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-panel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-details span {
+    font-weight: 700;
+}
+
+.nav input {
+    width: 40vw;
+    border-radius: 25px;
+    background-color: #E2E8F0;
+    outline: none;
+    border: none;
+    padding: 2px 15px;
+    font-size: 0.9rem;
+}
+
+.nav img {
+    width: 40px;
+    border-radius: 25px;
+}
+
+.menu img{
+    width: 65px;
+    border-radius: 40px;
+}
+
+.menu {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu .greeting {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.menu .greeting div:first-child {
+    font-size: 0.8rem;
+}
+
+.menu .greeting div:last-child {
+    font-size: 1.5rem;
+}
+
+.menu .buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu .buttons button {
+    background-color: #1992D4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
 .content {
