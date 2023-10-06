@@ -70,3 +70,7 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+ul {
+  padding-inline-start: 0;
+}
